@@ -780,6 +780,8 @@
     <p>O seu digimon pode não digivolver se sua posição não é alta o suficiente para pegá-lo. <br />
       Exemplo: Você tem um rookie com você Guilmon e batalha 6 vezes e ele
       não vai digivolve se você nao tiver a classificação Champion liberada. <br /></p>
+      <ul>
+        <li>
     <strong>
       <h2>In-Training I &gt; In-Training II</h2>
     </strong>
@@ -844,7 +846,10 @@
         - Koromon (&gt;= 20 Dragon-AP)<br />
         - Tanemon (passing time)</li>
       <br />
+    </ul></li>
     </ul>
+    <ul>
+        <li>
     <strong>
       <h2>In-Training II &gt; Rookie</h2>
     </strong>
@@ -929,7 +934,10 @@
         - Tentomon (&gt;= 20 Insect-AP)<br />
         - Kunemon (passing time)</li>
       <br />
+      </ul></li>
     </ul>
+    <ul>
+        <li>
     <strong>
       <h2>Rookie &gt; Champion</h2>
     </strong>
@@ -1153,7 +1161,10 @@
         - Kyuubimon (&gt;= 20 Beast-AP)<br />
         - Sukamon (passing time)</li>
       <br />
+      </ul></li>
     </ul>
+    <ul>
+        <li>
     <strong>
       <h2>Champion &gt; Ultimate</h2>
     </strong>
@@ -1463,7 +1474,10 @@
         - Jureimon (&gt;= 40 Insect-AP)<br />
         - Vademon (passing time)</li>
       <br />
+      </ul></li>
     </ul>
+    <ul>
+        <li>
     <strong>
       <h2>Ultimate &gt; Mega</h2>
     </strong>
@@ -1664,6 +1678,7 @@
       <br />
       <li>Waru Monzeemon<br />
         - Pinocchimon (&gt;= 60 Darkness-AP; &gt;= 60 Machine-AP)</li>
+        </ul></li>
     </ul>
     <span style="font-size: medium;"><br /> </span>
     <h2 id="heading9"><span style="font-size: medium;">Todas as Gaiolas</span></h2>
@@ -1701,3 +1716,20 @@
         <li><strong>Ring</strong>: (Fight# is "hidden", raises Total Fights 1/entry) Attack, HP</li>
       </ul>
 </span></div></span>
+<script>
+   // Seleciona todos os elementos ul que contêm listas
+var listas = document.querySelectorAll("ul > li > ul");
+
+// Adiciona um manipulador de eventos de clique a cada lista
+listas.forEach(function(lista) {
+  lista.style.display = "none"; // oculta a lista inicialmente
+  lista.parentElement.firstElementChild.addEventListener("click", function() {
+    if (lista.style.display === "none") {
+      lista.style.display = "block";
+    } else {
+      lista.style.display = "none";
+    }
+  });
+});
+
+</script>
