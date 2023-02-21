@@ -1,3 +1,18 @@
+<style>
+  .local{
+    cursor: pointer;
+  }
+  .cima{
+    font-weight: bold;
+    font-size: 1.2em;
+    display: none;
+  }
+  .baixo {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+</style>
 <span style="font-size: medium;">
   1. <a href="#heading1">Começo</a><br />
   2. <a href="#heading2">Capturar um digimon</a> <br />
@@ -133,9 +148,10 @@
     <p><strong>Nota:</strong> digimon mega não podem ser capturados na natureza.</p>
   </div>
   <div>
-    <span style="font-size: medium;"> Locais<br /> </span>
+    <label>Pesquisar o digimon: <input type="text" class="pesquisa"></label>
+    <h3 style="font-size: medium;"> Locais<br /> </h3>
     <ul>
-      <li><strong>Dino Plains</strong>
+      <li><strong class="local">Dino Plains<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>poyomon</li>
           <li>kokatorimon</li>
@@ -155,7 +171,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Wave coast</strong>
+      <li><strong class="local">Wave coast<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>shellmon</li>
           <li>gesomon</li>
@@ -169,7 +185,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Jagged rocks</strong>
+      <li><strong class="local">Jagged rocks<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>unimon</li>
           <li>tokomon</li>
@@ -181,7 +197,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Clear Oasis</strong>
+      <li><strong class="local">Clear Oasis<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>meramon</li>
           <li>gargomon</li>
@@ -196,7 +212,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Drive Savannas</strong>
+      <li><strong class="local">Drive Savannas<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>Rabidmon</li>
           <li>Gargomon</li>
@@ -211,7 +227,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Slippery Swamp</strong>
+      <li><strong class="local">Slippery Swamp<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>Gizamon</li>
           <li>Motimon</li>
@@ -228,7 +244,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>S.Bridge Valley</strong>
+      <li><strong class="local">S.Bridge Valley<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>cantarumon</li>
           <li>goburimon</li>
@@ -251,7 +267,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Modular Forrest</strong>
+      <li><strong class="local">Modular Forrest<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>palmon</li>
           <li>nyaromon</li>
@@ -266,7 +282,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Chrome Mines</strong>
+      <li><strong class="local">Chrome Mines<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>Blacktyranoomon</li>
           <li>demiadevimon</li>
@@ -279,7 +295,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Volcano</strong>
+      <li><strong class="local">Volcano<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>botamon</li>
           <li>demimeramon</li>
@@ -295,7 +311,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Snow Land</strong>
+      <li><strong class="local">Snow Land<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>andromon</li>
           <li>metaltyranoomon</li>
@@ -312,7 +328,7 @@
     </ul>
 
     <ul>
-      <li><strong>Sizzzling Desert</strong>
+      <li><strong class="local">Sizzzling Desert<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>Veemon</li>
           <li>Airdramon</li>
@@ -326,7 +342,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Boot Jungle</strong>
+      <li><strong class="local">Boot Jungle<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>palmon</li>
           <li>motimon</li>
@@ -344,7 +360,7 @@
       </li>
     </ul>
     <ul>
-      <li><strong>Sewer Road</strong>
+      <li><strong class="local">Sewer Road<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></strong>
         <ul>
           <li>gesomon</li>
           <li>sukamon</li>
@@ -780,10 +796,12 @@
     <p>O seu digimon pode não digivolver se sua posição não é alta o suficiente para pegá-lo. <br />
       Exemplo: Você tem um rookie com você Guilmon e batalha 6 vezes e ele
       não vai digivolve se você nao tiver a classificação Champion liberada. <br /></p>
+
+      <label>Pesquisar o digimon: <input type="text" class="pesquisa"></label>
       <ul>
         <li>
     <strong>
-      <h2>In-Training I &gt; In-Training II</h2>
+      <h2>In-Training I &gt; In-Training II<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></h2>
     </strong>
     <ul>
       <li>Zurumon<br />
@@ -851,7 +869,7 @@
     <ul>
         <li>
     <strong>
-      <h2>In-Training II &gt; Rookie</h2>
+      <h2>In-Training II &gt; Rookie<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></h2>
     </strong>
     <ul>
       <li>Kapurimon<br />
@@ -939,7 +957,7 @@
     <ul>
         <li>
     <strong>
-      <h2>Rookie &gt; Champion</h2>
+      <h2>Rookie &gt; Champion<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></h2>
     </strong>
     <ul>
       <li>Agumon<br />
@@ -1166,7 +1184,7 @@
     <ul>
         <li>
     <strong>
-      <h2>Champion &gt; Ultimate</h2>
+      <h2>Champion &gt; Ultimate<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></h2>
     </strong>
     <ul>
       <li>Ice Devimon<br />
@@ -1479,7 +1497,7 @@
     <ul>
         <li>
     <strong>
-      <h2>Ultimate &gt; Mega</h2>
+      <h2>Ultimate &gt; Mega<span class="baixo"> &darr;</span><span class="cima"> &uarr;</span></h2>
     </strong>
     <ul>
       <li>Althur Kabuterimon<br />
@@ -1717,7 +1735,7 @@
       </ul>
 </span></div></span>
 <script>
-   // Seleciona todos os elementos ul que contêm listas
+ // Seleciona todos os elementos ul que contêm listas
 var listas = document.querySelectorAll("ul > li > ul");
 
 // Adiciona um manipulador de eventos de clique a cada lista
@@ -1726,10 +1744,59 @@ listas.forEach(function(lista) {
   lista.parentElement.firstElementChild.addEventListener("click", function() {
     if (lista.style.display === "none") {
       lista.style.display = "block";
+      this.querySelector(".cima").style.display = "inline";
+      this.querySelector(".baixo").style.display = "none";
     } else {
       lista.style.display = "none";
+      this.querySelector(".cima").style.display = "none";
+      this.querySelector(".baixo").style.display = "inline";
     }
   });
 });
+
+</script>
+
+<script>
+  // Seleciona os campos de pesquisa
+var camposPesquisa = document.querySelectorAll(".pesquisa");
+
+// Seleciona todas as listas de digimon
+var listas = document.querySelectorAll("ul > li > ul");
+
+camposPesquisa.forEach(function(campoPesquisa) {
+  campoPesquisa.addEventListener("input", function() {
+    // Obtém o valor do campo de pesquisa
+    var filtro = campoPesquisa.value.toUpperCase();
+
+    // Percorre todas as listas de digimon
+    listas.forEach(function(lista) {
+      // Percorre todas as linhas da lista de digimon
+      var linhas = lista.getElementsByTagName("li");
+      for (var i = 0; i < linhas.length; i++) {
+        var linha = linhas[i];
+        var digimon = linha.textContent.toUpperCase();
+        // Verifica se a linha contém o valor do filtro
+        if (digimon.indexOf(filtro) > -1) {
+          // Se a linha contém o valor do filtro, mostra-a
+          linha.style.color = "red";
+          linha.style.display = "block";
+        } else {
+          // Caso contrário, esconde-a
+          linha.style.display = "none";
+        }
+      }
+    });
+
+    // Verifica se o campo de pesquisa está vazio
+    if (filtro === '') {
+      // Se estiver vazio, exibe todas as linhas e resetar o estilo
+      var linhas = document.getElementsByTagName("li");
+      for (var i = 0; i < linhas.length; i++) {
+        linhas[i].style.color = "";
+      }
+    }
+  });
+});
+
 
 </script>
